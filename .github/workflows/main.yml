@@ -19,6 +19,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: ruby/setup-ruby@v1.99.0
+        with: 
+          ruby-version: latest
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
